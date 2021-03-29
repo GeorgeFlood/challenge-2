@@ -1,0 +1,97 @@
+*{
+	margin: 0;	
+	box-sizing: border-box;
+}
+
+
+body{
+background-color: lightblue;
+}
+
+
+h1{
+	font-size: 3em;
+	text-align: center;	
+	margin-top: 5%;
+	color: green;
+}
+
+
+.buttons{
+display: flex;
+justify-content: space-around;
+padding-top: 10%;
+}
+
+
+.button{
+padding-top: 1%;
+margin: auto;
+color: green;
+font-size: 1.6em;
+background-color: cyan;
+border-radius: 5%;
+box-shadow: 1px 2px 3px grey,
+2px 3px 4px grey,
+3px 4px 5px grey,
+4px 5px 6px grey,
+5px 6px 7px black,
+6px 7px 8px black,
+7px 8px 9px black;
+cursor: pointer;
+}
+
+
+.button {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
