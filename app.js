@@ -1,8 +1,8 @@
-let tag = document.querySelector(".button");
-let edit = document.querySelector(".edit");
+let tag = document.getElementsByClassName('button');
+let edit = document.getElementsByClassName("edit");
 
 
-let quotes = [
+const quotes = [
 'The Best Way To Get Started Is To Quit Talking And Begin Doing. – Walt Disney',
 'The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty. – Winston Churchill',
 'Don’t Let Yesterday Take Up Too Much Of Today. – Will Rogers',
@@ -10,7 +10,7 @@ let quotes = [
 'If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You. – Steve Jobs',
 ];
 
-let jokes = [
+const jokes = [
 "What do you call a factory that makes okay products? A satisfactory.",
 "What did the janitor say when he jumped out of the closet? Supplies!",
 "Have you heard about the chocolate record player? It sounds pretty sweet.",
@@ -25,8 +25,11 @@ let jumble = arr[Math.floor(Math.random() * arr.length)];
 return jumble;	
 }
 
+console.log(jumble(jokes))
+console.log(jumble(quotes))
 
-tag.addEventListener('click', (event) => {
-const jokes = jumble(jokes);
-edit.innerHTML = `${jokes}`;
+tag.addEventListener('click', () => {
+
 });
+
+
