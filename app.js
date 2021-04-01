@@ -74,15 +74,15 @@ get quotes(){
    },
 
 set sentences(sentences){
- this._buttons.sentences = sentences;	
+ this.arrays.sentences = sentences;	
   },
 
 set jokes(jokes){
- this._buttons.jokes = jokes
+ this.arrays.jokes = jokes
  },
 
 set quotes(quotes){
- this._buttons.quotes = quotes;	
+ this.arrays.quotes = quotes;	
  },
 },
 
@@ -98,9 +98,9 @@ return all = {
 	jokes: jokes,
 	quotes: quotes,	
 };
-this._buttons[sentences].push(sentences);
-this._buttons[jokes].push(jokes);
-this._buttons[quotes].push(quotes);
+this.arrays[sentences].push(sentences);
+this.arrays[jokes].push(jokes);
+this.arrays[quotes].push(quotes);
 },
 
 randomArray(array){
