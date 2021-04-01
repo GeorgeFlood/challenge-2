@@ -6,7 +6,7 @@ const edit = document.querySelector('.edit');
 
 const moreSentences = () => {
 
- return _buttons: {
+return arrays: {
 
  sentences: [
 	`Remember, you can't smoke coffee because you don't have that special kind of applesauce that you can put on squirrels without bothering them.`,
@@ -21,7 +21,6 @@ const moreSentences = () => {
 	`His 7 layer'd cake had only 6 layers - it was a bad day.`,
 	`The bees decided to have a mutiny against their queen on her jubilee`,
  ],
-
  jokes: [
 	"What do you call a factory that makes okay products? A satisfactory.",
 	"What did the janitor say when he jumped out of the closet? Supplies!",
@@ -47,7 +46,6 @@ const moreSentences = () => {
 	"Where do you learn to make a banana split? Sundae school.",
 	"I asked my dog what's two minus two. He said nothing.",
 ],
-
  quotes: [
 	`"The Best Way To Get Started Is To Quit Talking And Begin Doing." – Walt Disney`,
 	`"The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty." – Winston Churchill`,
